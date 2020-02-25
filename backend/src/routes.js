@@ -1,10 +1,7 @@
 const { Router } = require('express');
-
+const DevController = require('./controllers/DevController');
 const routes = Router();
 
-routes.post('/users', (request, response) => {
-    console.log('teste body:', request.body)
-    return response.json({ message: 'created User'});
-});
+routes.post('/devs', DevController.store);
 
 module.exports = routes;
