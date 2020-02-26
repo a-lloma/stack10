@@ -18,12 +18,14 @@ function App() {
             <input name="techs" id="techs" required />
           </div>
           <div className="input-group">
-            <label htmlFor="latitude">Latitude</label>
-            <input name="latitude" id="latitude" required />
-          </div>
-          <div className="input-group">
-            <label htmlFor="longitude">Longitude</label>
-            <input name="longitude" id="longitude" required />
+            <div className="input-block">
+              <label htmlFor="latitude">Latitude</label>
+              <input name="latitude" id="latitude" required />
+            </div>
+            <div className="input-block">
+              <label htmlFor="longitude">Longitude</label>
+              <input name="longitude" id="longitude" required />
+            </div>
           </div>
 
           <button type="submit">Salvar</button>
